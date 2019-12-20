@@ -140,3 +140,45 @@ nav li a {
   color: white;
   text-decoration: none;
 }
+.home-page-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  flex-direction: column;
+  border: 2px solid black;
+}
+.home-page-top h1 {
+  font-size: 3rem;
+}
+.home-page-top p {
+  font-size: 1rem;
+}
+.featured-recipes {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.featured-recipes h1 {
+  font-size: 3rem;
+}
+.featured-recipes p {
+  font-size: 1rem;
+}
+.popular-categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+.popular-categories .card {
+  border: 2px solid black;
+  flex-wrap: wrap;
+}
+.popular-categories h1 {
+  font-size: 3rem;
+}
+.popular-categories p {
+  font-size: 1rem;
+}
