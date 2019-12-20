@@ -140,3 +140,8 @@ nav li a {
   color: white;
   text-decoration: none;
 }
+@media only screen and (max-width: 500px) {
+  Body {
+    text-align: center;
+  }
+}
