@@ -126,6 +126,20 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.top-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  flex-direction: column;
+  border: 2px solid black;
+}
+.top-content h1 {
+  font-size: 3rem;
+}
+.top-content p {
+  font-size: 1rem;
+}
 nav {
   background-color: #584b45;
   display: flex;
@@ -139,6 +153,20 @@ nav li {
 nav li a {
   color: white;
   text-decoration: none;
+}
+.about-page-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  flex-direction: column;
+  border: 2px solid black;
+}
+.about-page-top h1 {
+  font-size: 3rem;
+}
+.about-page-top p {
+  font-size: 1rem;
 }
 .home-page-top {
   display: flex;
