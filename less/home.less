@@ -1,39 +1,31 @@
 .home-page-top {
-    .flex(center);
-    height: 400px;
-    flex-direction: column;
-    border: 2px solid black;
-    h1 {
-        font-size: 3rem;
-    }
-    p {
-        font-size: 1rem;
-    }
+    .top-content;
 
 }
 
+.home-headings {
+    text-align: center;
+    margin-top: @home-headings-margin;
+    margin-bottom: @home-headings-margin;
+}
+
 .featured-recipes {
-    border: 2px solid black;
-    .flex(center);
-    h1 {
-        font-size: 3rem;
-    }
-    p {
-        font-size: 1rem;
+    .recipes;
+    div {
+        padding: @container-padding;
+        .card-font-size;
     }
 }
 
 .popular-categories {
-    .flex(center);
-    border: 2px solid black;
-    .card {
-        border: 2px solid black;
-        flex-wrap: wrap;
-    }
-    h1 {
-        font-size: 3rem;
-    }
-    p {
-        font-size: 1rem;
+    .recipes;
+    flex-wrap: wrap;
+    margin: 3%;
+    div {
+        padding: @container-padding;
+        margin: 3%;
+        width: 20%;
+        border: 1px solid blue;
+        .card-font-size;
     }
 }
