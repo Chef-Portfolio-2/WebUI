@@ -10,15 +10,20 @@
 }
 
 .featured-recipes {
-    .recipes;
+    .flex(space-evenly, center);
     div {
         padding: @container-padding;
-        .card-font-size;
+        h1 {
+            font-size: @card-h1;
+        }
+        p {
+            font-size: @card-p;
+        }
     }
 }
 
 .popular-categories {
-    .recipes;
+    .flex(space-evenly, center);
     flex-wrap: wrap;
     margin: 3%;
     div {
@@ -26,6 +31,11 @@
         margin: 3%;
         width: 20%;
         border: 1px solid blue;
-        .card-font-size;
+        h1 {
+            font-size: @card-h1;
+        }
+        p {
+            font-size: @card-p;
+        }
     }
 }

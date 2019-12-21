@@ -1,16 +1,14 @@
-.flex(@justify) {
+.flex(@justify, @align) {
     display: flex;
     justify-content: @justify;
-    align-items: center;
+    align-items: @align;
 }
 
 .top-content {
-    .flex(center);
+    .flex(center, center);
     height: 400px;
     flex-direction: column;
-    border: 2px solid black;
     text-align: center;
-    margin: 0 3%;
     h1 {
         font-size: 3rem;
     }
@@ -19,16 +17,6 @@
     }
 }
 
-.recipes {
-    border: 2px solid black;
-    .flex(space-evenly);
-}
-
 .card-font-size {
-    h1 {
-        font-size: 1rem;
-    }
-    p {
-        font-size: 0.5rem;
-    }
+    font-size: 1rem;  
 }

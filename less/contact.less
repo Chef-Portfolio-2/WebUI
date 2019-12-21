@@ -1,12 +1,27 @@
 .contact-page-top {
     .top-content;
+    background-image: url(../images/chef.jpg);
+    background-repeat: round;
 }
 
 .contact-cards {
-    .recipes;
+    .flex(space-evenly, center);
     padding: @container-padding;
-    .card-font-size;
     div {
         margin: 0 3%;
+        .flex(center, center);
+        flex-direction: column;
+        h1 {
+            font-size: @card-h1;
+            color: @card-heading-color;
+        }
+        p {
+            font-size: @card-p;
+        }
+        button {
+            background-color: green;
+            color: white;
+            border-radius: 15%;
+        }
     }
 }

@@ -126,15 +126,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+body {
+  line-height: 1.5;
+}
 .top-content {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 400px;
   flex-direction: column;
-  border: 2px solid black;
   text-align: center;
-  margin: 0 3%;
 }
 .top-content h1 {
   font-size: 3rem;
@@ -142,17 +143,8 @@ table {
 .top-content p {
   font-size: 1rem;
 }
-.recipes {
-  border: 2px solid black;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.card-font-size h1 {
+.card-font-size {
   font-size: 1rem;
-}
-.card-font-size p {
-  font-size: 0.5rem;
 }
 nav {
   background-color: #584b45;
@@ -161,12 +153,15 @@ nav {
   align-items: center;
   height: 100px;
 }
-nav li {
-  list-style: none;
-}
-nav li a {
+nav a {
   color: white;
   text-decoration: none;
+}
+nav a:hover {
+  color: black;
+}
+nav a:hover:nth-child(5) {
+  color: blue;
 }
 .contact-page-top {
   display: flex;
@@ -174,9 +169,9 @@ nav li a {
   align-items: center;
   height: 400px;
   flex-direction: column;
-  border: 2px solid black;
   text-align: center;
-  margin: 0 3%;
+  background-image: url(../images/chef.jpg);
+  background-repeat: round;
 }
 .contact-page-top h1 {
   font-size: 3rem;
@@ -185,20 +180,29 @@ nav li a {
   font-size: 1rem;
 }
 .contact-cards {
-  border: 2px solid black;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 5%;
 }
-.contact-cards h1 {
-  font-size: 1rem;
-}
-.contact-cards p {
-  font-size: 0.5rem;
-}
 .contact-cards div {
   margin: 0 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-cards div h1 {
+  font-size: 2rem;
+  color: green;
+}
+.contact-cards div p {
+  font-size: 1rem;
+}
+.contact-cards div button {
+  background-color: green;
+  color: white;
+  border-radius: 15%;
 }
 .home-page-top {
   display: flex;
@@ -206,9 +210,7 @@ nav li a {
   align-items: center;
   height: 400px;
   flex-direction: column;
-  border: 2px solid black;
   text-align: center;
-  margin: 0 3%;
 }
 .home-page-top h1 {
   font-size: 3rem;
@@ -222,7 +224,6 @@ nav li a {
   margin-bottom: 5%;
 }
 .featured-recipes {
-  border: 2px solid black;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -231,13 +232,12 @@ nav li a {
   padding: 5%;
 }
 .featured-recipes div h1 {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 .featured-recipes div p {
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
 .popular-categories {
-  border: 2px solid black;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -251,10 +251,10 @@ nav li a {
   border: 1px solid blue;
 }
 .popular-categories div h1 {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 .popular-categories div p {
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
 @media only screen and (max-width: 500px) {
   Body {
