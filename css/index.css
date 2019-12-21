@@ -130,7 +130,6 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5%;
   height: 400px;
   flex-direction: column;
   border: 2px solid black;
@@ -171,7 +170,6 @@ nav li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5%;
   height: 400px;
   flex-direction: column;
   border: 2px solid black;
@@ -199,7 +197,6 @@ nav li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5%;
   height: 400px;
   flex-direction: column;
   border: 2px solid black;
