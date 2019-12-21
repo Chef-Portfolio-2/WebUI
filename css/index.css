@@ -134,6 +134,7 @@ table {
   flex-direction: column;
   border: 2px solid black;
   text-align: center;
+  margin: 0 3%;
 }
 .top-content h1 {
   font-size: 3rem;
@@ -175,6 +176,7 @@ nav li a {
   flex-direction: column;
   border: 2px solid black;
   text-align: center;
+  margin: 0 3%;
 }
 .contact-page-top h1 {
   font-size: 3rem;
@@ -206,6 +208,7 @@ nav li a {
   flex-direction: column;
   border: 2px solid black;
   text-align: center;
+  margin: 0 3%;
 }
 .home-page-top h1 {
   font-size: 3rem;
