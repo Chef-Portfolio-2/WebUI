@@ -136,6 +136,7 @@ body {
   height: 400px;
   flex-direction: column;
   text-align: center;
+  color: white;
 }
 .top-content h1 {
   font-size: 3rem;
@@ -145,6 +146,15 @@ body {
 }
 .card-font-size {
   font-size: 1rem;
+}
+.image-sizing {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+.home-images {
+  color: white;
+  font-weight: bold;
 }
 nav {
   background-color: #584b45;
@@ -220,8 +230,11 @@ footer a:hover:nth-child(5) {
   height: 400px;
   flex-direction: column;
   text-align: center;
+  color: white;
   background-image: url(../images/chef.jpg);
-  background-repeat: round;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
 .contact-page-top h1 {
   font-size: 3rem;
@@ -261,6 +274,11 @@ footer a:hover:nth-child(5) {
   height: 400px;
   flex-direction: column;
   text-align: center;
+  color: white;
+  background-image: url(../images/food.jpg);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
 .home-page-top h1 {
   font-size: 3rem;
@@ -273,13 +291,30 @@ footer a:hover:nth-child(5) {
   margin-top: 5%;
   margin-bottom: 5%;
 }
+.home-headings h1 {
+  color: green;
+  font-size: 3rem;
+}
 .featured-recipes {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .featured-recipes {
+    display: block;
+  }
+}
 .featured-recipes div {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-weight: bold;
   padding: 5%;
+  background-image: url(../images/hamburger.jpg);
+  margin: 1%;
+  border-radius: 2%;
 }
 .featured-recipes div h1 {
   font-size: 2rem;
@@ -295,10 +330,22 @@ footer a:hover:nth-child(5) {
   margin: 3%;
 }
 .popular-categories div {
+  background-image: url(../images/food.jpg);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-weight: bold;
   padding: 5%;
   margin: 3%;
   width: 20%;
-  border: 1px solid blue;
+  border-radius: 2%;
+}
+@media (max-width: 500px) {
+  .popular-categories div {
+    width: 100%;
+    margin: 1%;
+  }
 }
 .popular-categories div h1 {
   font-size: 2rem;
