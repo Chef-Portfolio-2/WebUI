@@ -1,0 +1,17 @@
+.top-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  flex-direction: column;
+  text-align: center;
+}
+.top-content h1 {
+  font-size: 3rem;
+}
+.top-content p {
+  font-size: 1rem;
+}
+.card-font-size {
+  font-size: 1rem;
+}
