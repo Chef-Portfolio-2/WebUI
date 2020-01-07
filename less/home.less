@@ -39,11 +39,6 @@
     .flex(space-evenly, center);
     flex-wrap: wrap;
     margin: 3%;
-    @media @phone {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        width: 100%;
-    }
     div {
         background-image: url(../images/food.jpg);
         .image-sizing;
@@ -51,8 +46,10 @@
         padding: @container-padding;
         margin: 3%;
         width: 20%;
+        border-radius: 2%;
         @media @phone {
             width: 100%;
+            margin: 1%;
         }
         h1 {
             font-size: @card-h1;

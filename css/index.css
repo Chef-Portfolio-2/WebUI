@@ -329,13 +329,6 @@ footer a:hover:nth-child(5) {
   flex-wrap: wrap;
   margin: 3%;
 }
-@media (max-width: 500px) {
-  .popular-categories {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    width: 100%;
-  }
-}
 .popular-categories div {
   background-image: url(../images/food.jpg);
   overflow: hidden;
@@ -346,10 +339,12 @@ footer a:hover:nth-child(5) {
   padding: 5%;
   margin: 3%;
   width: 20%;
+  border-radius: 2%;
 }
 @media (max-width: 500px) {
   .popular-categories div {
     width: 100%;
+    margin: 1%;
   }
 }
 .popular-categories div h1 {
