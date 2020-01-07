@@ -5,10 +5,7 @@
   height: 400px;
   flex-direction: column;
   text-align: center;
-<<<<<<< HEAD
   color: white;
-=======
->>>>>>> master
 }
 .top-content h1 {
   font-size: 3rem;
@@ -19,7 +16,6 @@
 .card-font-size {
   font-size: 1rem;
 }
-<<<<<<< HEAD
 .image-sizing {
   overflow: hidden;
   background-size: cover;
@@ -29,5 +25,3 @@
   color: white;
   font-weight: bold;
 }
-=======
->>>>>>> master
