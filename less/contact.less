@@ -5,10 +5,20 @@
 }
 
 .contact-cards {
+    @media @phone {
+        display: block;
+    };
     .flex(space-evenly, center);
     padding: @container-padding;
     div {
+        @media @phone {
+            margin-bottom: 3%;
+        };
+        padding: 3%;
         margin: 0 3%;
+        border: 1px groove bisque;
+        border-radius: 5%;
+        background-color: lightgray;
         .flex(center, center);
         flex-direction: column;
         h1 {
@@ -22,6 +32,7 @@
             background-color: green;
             color: white;
             border-radius: 15%;
+            margin: 5% 0 5% 0;
         }
     }
 }
