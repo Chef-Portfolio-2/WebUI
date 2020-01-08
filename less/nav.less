@@ -2,31 +2,39 @@ nav {
     background-color: #584b45;
     .flex(space-evenly, center);
     height: 100px;
+
     a {
         color: white;
         text-decoration: none;
     }
+
     a:hover {
         color: black;
     }
+
     .button {
-        background-color:#49ad63;
-        border-radius:19px;
-        border:2px solid #18ab29;
-        display:inline-block;
-        cursor:pointer;
-        color:#ffffff;
-        font-family:Arial;
-        font-size:17px;
-        padding:24px 31px;
-        text-decoration:none;
-        text-shadow:0px 0px 26px #2f6627;
+        box-shadow: inset 0px 1px 0px 0px #caefab;
+        background: linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+        background-color: #77d42a;
+        border-radius: 6px;
+        border: 1px solid #268a16;
+        display: inline-block;
+        cursor: pointer;
+        color: #306108;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 6px 24px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #aade7c;
         .button:hover {
-            background-color:#5cbf2a;
+            background: linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+            background-color: #5cb811;
         }
+    
         .button:active {
-            position:relative;
-            top:1px;
+            position: relative;
+            top: 1px;
         }
     }
 }
