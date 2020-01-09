@@ -1,6 +1,5 @@
-section{
+.section1{
 display: flex;
-flex-direction: column;
 justify-content: center;
 align-content: center;
     .aboutimage{
@@ -8,30 +7,24 @@ align-content: center;
         width: 200px;
         height: 200px;
     }
-    .miley{
-        margin-right:15px;
-        width: 200px;
-        height: 200px; 
-    }
+    
 }
 .aboutUs{
     color:green;
     font-size:75px;
-    background: bisque;
+    
     display: flex;
     justify-content: center;
 }
 .us{
     color:green;
     font-size:25px;
-    background: bisque;
+    
     display: flex;
     justify-content: center;
 }
 
-.section1{
-    background:bisque;
-}
+
 footer{
     background-color: #584b45;
     .flex(space-evenly, center);
@@ -48,10 +41,16 @@ footer{
     }
 }
 
-@media (min-width: 500px){
-    section{
-        word-wrap: inherit;
-        flex-flow: row;
-    }//section
+@media (max-width: 500px){
+    .section1{
+        flex-direction: column;
+
+    }
 }//end
 
+
+@media (min-width:500px){
+    .section1 p{
+        margin:35px;
+    }
+}
