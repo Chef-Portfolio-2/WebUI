@@ -220,19 +220,19 @@ nav button .button:active {
 }
 section {
   display: flex;
-  align-content: center;
+  flex-direction: column;
   justify-content: center;
+  align-content: center;
 }
 section .aboutimage {
   margin: 15px;
-  width: 75%;
-  height: 75%;
+  width: 200px;
+  height: 200px;
 }
 section .miley {
-  width: 75%;
-  height: 75%;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-right: 15px;
+  width: 200px;
+  height: 200px;
 }
 .aboutUs {
   color: green;
@@ -267,6 +267,12 @@ footer a:hover {
 }
 footer a:hover:nth-child(5) {
   color: blue;
+}
+@media (min-width: 500px) {
+  section {
+    word-wrap: inherit;
+    flex-flow: row;
+  }
 }
 .contact-page-top {
   display: flex;

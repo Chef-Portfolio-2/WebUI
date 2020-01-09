@@ -1,17 +1,17 @@
 section{
 display: flex;
-align-content: center;
+flex-direction: column;
 justify-content: center;
+align-content: center;
     .aboutimage{
         margin:15px;
-        width: 75%;
-        height: 75%;
+        width: 200px;
+        height: 200px;
     }
     .miley{
-        width: 75%;
-        height: 75%; 
-        margin-left:50px;
-        margin-right:50px;
+        margin-right:15px;
+        width: 200px;
+        height: 200px; 
     }
 }
 .aboutUs{
@@ -47,3 +47,11 @@ footer{
         color:blue;
     }
 }
+
+@media (min-width: 500px){
+    section{
+        word-wrap: inherit;
+        flex-flow: row;
+    }//section
+}//end
+
