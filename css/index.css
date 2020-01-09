@@ -395,6 +395,10 @@ footer a:hover:nth-child(5) {
 .popular-categories div p {
   font-size: 1rem;
 }
+.ingredients {
+  font-size: 20px;
+  font-weight: bold;
+}
 @media only screen and (max-width: 500px) {
   Body {
     text-align: center;
