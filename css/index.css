@@ -156,21 +156,7 @@ body {
   color: white;
   font-weight: bold;
 }
-nav {
-  background-color: #584b45;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100px;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-}
-nav a:hover {
-  color: black;
-}
-nav .button {
+.button {
   box-shadow: inset 0px 1px 0px 0px #caefab;
   background: linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
   background-color: #77d42a;
@@ -186,11 +172,49 @@ nav .button {
   text-decoration: none;
   text-shadow: 0px 1px 0px #aade7c;
 }
-nav .button .button:hover {
+.button .button:hover {
   background: linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
   background-color: #5cb811;
 }
-nav .button .button:active {
+.button .button:active {
+  position: relative;
+  top: 1px;
+}
+nav {
+  background-color: #584b45;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  color: black;
+}
+nav button {
+  box-shadow: inset 0px 1px 0px 0px #caefab;
+  background: linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+  background-color: #77d42a;
+  border-radius: 6px;
+  border: 1px solid #268a16;
+  display: inline-block;
+  cursor: pointer;
+  color: #306108;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #aade7c;
+}
+nav button .button:hover {
+  background: linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+  background-color: #5cb811;
+}
+nav button .button:active {
   position: relative;
   top: 1px;
 }
@@ -268,6 +292,7 @@ footer a:hover:nth-child(5) {
   justify-content: space-evenly;
   align-items: center;
   padding: 5%;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .contact-cards {
@@ -298,10 +323,29 @@ footer a:hover:nth-child(5) {
   font-size: 1rem;
 }
 .contact-cards div button {
-  background-color: green;
-  color: white;
-  border-radius: 15%;
-  margin: 5% 0 5% 0;
+  box-shadow: inset 0px 1px 0px 0px #caefab;
+  background: linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+  background-color: #77d42a;
+  border-radius: 6px;
+  border: 1px solid #268a16;
+  display: inline-block;
+  cursor: pointer;
+  color: #306108;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #aade7c;
+  margin-top: 3%;
+}
+.contact-cards div button .button:hover {
+  background: linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+  background-color: #5cb811;
+}
+.contact-cards div button .button:active {
+  position: relative;
+  top: 1px;
 }
 .home-page-top {
   display: flex;
@@ -341,6 +385,12 @@ footer a:hover:nth-child(5) {
     display: block;
   }
 }
+.featured-recipes .speghetti {
+  background-image: url(../images/spaghetti.jpg);
+}
+.featured-recipes .pasta {
+  background-image: url(../images/Pasta.jpg);
+}
 .featured-recipes div {
   overflow: hidden;
   background-size: cover;
@@ -366,7 +416,7 @@ footer a:hover:nth-child(5) {
   margin: 3%;
 }
 .popular-categories div {
-  background-image: url(../images/food.jpg);
+  text-align: center;
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -385,9 +435,45 @@ footer a:hover:nth-child(5) {
 }
 .popular-categories div h1 {
   font-size: 2rem;
+  font-weight: bolder;
+  color: #30ffaa;
 }
 .popular-categories div p {
   font-size: 1rem;
+  box-shadow: inset 0px 1px 0px 0px #caefab;
+  background: linear-gradient(to bottom, #77d42a 5%, #5cb811 100%);
+  background-color: #77d42a;
+  border-radius: 6px;
+  border: 1px solid #268a16;
+  display: inline-block;
+  cursor: pointer;
+  color: #306108;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #aade7c;
+}
+.popular-categories div p .button:hover {
+  background: linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+  background-color: #5cb811;
+}
+.popular-categories div p .button:active {
+  position: relative;
+  top: 1px;
+}
+.popular-categories .chili {
+  background-image: url(../images/buffalo-chili.jpg);
+}
+.popular-categories .meatballs {
+  background-image: url(../images/meatball.jpg);
+}
+.popular-categories .alfredo {
+  background-image: url(../images/chicken-alfredo.jpg);
+}
+.popular-categories .chicken-bites {
+  background-image: url(../images/chicken-bites.jpg);
 }
 @media only screen and (max-width: 500px) {
   Body {
