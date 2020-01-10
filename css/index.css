@@ -480,6 +480,8 @@ footer a:hover:nth-child(5) {
 }
 .section2 {
   display: flex;
+  margin: 20px;
+  justify-content: space-around;
 }
 @media (max-width: 500px) {
   .section2 {
